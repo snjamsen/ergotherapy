@@ -1,0 +1,14 @@
+// Buttons
+.btn {
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 10px 50px -10px $primary;
+
+    &:hover {
+        box-shadow: 0 10px 50px -15px $primary;
+    }
+
+    &:active {
+        box-shadow: 0 10px 50px -20px $primary !important;
+    }
+}

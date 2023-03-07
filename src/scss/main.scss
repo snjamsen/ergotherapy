@@ -1,0 +1,85 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Yeseva One', cursive;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Yeseva One', cursive;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+// Navbar
+.navigation {
+    .btn {
+        width: 120px;
+        margin-left: 15px;
+    }
+}
+
+// Hero
+.hero {
+    p {
+        font-weight: 600;
+    }
+
+    .btn {
+        min-height: 66px;
+        min-width: 220px;
+    }
+}
+
+// About
+.about {
+    .content {
+        background-color: #f1ebb5;
+        border-radius: 13px;
+
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        .container {
+            max-width: 1020px;
+        }
+    }
+}
+
+// Features
+/*
+.feature {
+    
+} 
+*/
+
+// Login
+
+.login {
+    background-color: $primary;
+    border-radius: 13px;
+    max-width: 1020px;
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        text-transform: uppercase;
+
+        .btn-primary {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .btn-secondary {
+            background-color: #f0c700;
+            color: #000;
+        }
+    }
+}

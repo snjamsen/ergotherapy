@@ -1,0 +1,17 @@
+// Variable overrides first
+$primary: #126db5;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom styles
+@import "../scss/custom.scss";
+
+// Main styles
+@import "../scss/main.scss"
+
