@@ -17,11 +17,54 @@ p {
     font-size: 1.25rem;
 }
 
-// Navbar
-.navigation {
-    .btn {
-        width: 120px;
-        margin-left: 15px;
+header {
+    border-bottom: #ababab 1px solid;
+
+    .navbar-toggler {
+        align-self: flex-end;
+        color: $primary;
+        margin-right: 7px;
+        margin-bottom: 7px;
+
+        .icon-bar {
+            display: block;
+            background-color: $primary;
+            height: 3px;
+            width: 25px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            position: relative;
+            left: 0;
+            opacity: 1;
+            transition: all 0.35s ease-out;
+            transform-origin: center left;
+        }
+
+        &.top-bar {
+            transform: translate(0%, 0%) rotate(0deg);
+            margin-top: 0.3em;
+        }
+
+        &:not(.collapsed) .top-bar {
+            transform: translate(15%, -33%) rotate(45deg);
+        }
+
+        &.middle-bar {
+            opacity: 1;
+        }
+
+        &:not(.collapsed) .middle-bar {
+            opacity: 0;
+        }
+
+        &.bottom-bar {
+            transform: translate(0%, 0%) rotate(0deg);
+        }
+
+        &:not(.collapsed) .bottom-bar {
+            transform: translate(15%, 33%) rotate(-45deg);
+        }
     }
 }
 
@@ -29,11 +72,6 @@ p {
 .hero {
     p {
         font-weight: 600;
-    }
-
-    .btn {
-        min-height: 66px;
-        min-width: 220px;
     }
 }
 
@@ -53,24 +91,33 @@ p {
 }
 
 // Features
-/*
-.feature {
-    
-} 
-*/
+
 
 // Login
-
 .login {
+    position: relative;
     background-color: $primary;
     border-radius: 13px;
-    max-width: 1020px;
+    color: #fff;
+
+    .girl-img {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        img {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
 
     .buttons {
         display: flex;
         justify-content: center;
-        gap: 5px;
-        text-transform: uppercase;
+        gap: 15px;
 
         .btn-primary {
             background-color: #fff;
