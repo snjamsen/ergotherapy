@@ -5,10 +5,16 @@
     box-shadow: 0 10px 50px -10px $primary;
 
     &:hover {
+        background-color: #4796d8;
         box-shadow: 0 10px 50px -15px $primary;
     }
 
     &:active {
+        box-shadow: 0 10px 50px -20px $primary !important;
+    }
+
+    &:focus {
+        background-color: #1272c1;
         box-shadow: 0 10px 50px -20px $primary !important;
     }
 }
