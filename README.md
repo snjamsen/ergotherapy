@@ -13,4 +13,11 @@ To run this project, install it locally using npm:
 ```
 $ npm install
 $ npm start
+$ npm run bulid 
+```
+
+For build production app:
+
+```
+$ npm run bulid 
 ```
