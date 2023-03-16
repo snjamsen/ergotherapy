@@ -3,7 +3,7 @@ Ukrainian Society of Ergotherapists - web-page build in Bootstrap v.5.2
 
 ## Technologies
 Project is created with:
-* Vite
+* Vite.js
 * Bootstrap 5.2
 * SASS/SCSS
 
@@ -13,11 +13,10 @@ To run this project, install it locally using npm:
 ```
 $ npm install
 $ npm start
-$ npm run bulid 
 ```
 
 For build production app:
 
 ```
-$ npm run bulid 
+$ npm run bulid
 ```
