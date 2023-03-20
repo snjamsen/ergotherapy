@@ -6,11 +6,19 @@
     <title>УТЕТ</title>
 
     <!-- Google fonts -->
+    <link rel="module" href="./js/preloader.js">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <!-- Preloader -->
+    <div class="preloader-wrapper">
+      <div class="spinner spinner-grow text-primary" role="status" style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden">Завантаження...</span>
+      </div>
+    </div>
     
     <!-- Navbar -->
     <div class="navigation container">
@@ -64,10 +72,10 @@
     <!-- About -->
     <div class="about container" id="about">
       <div class="px-4 my-5 text-center content">
-        <h2 class="display-3 mb-5">
-          <span class="border-bottom border-dark border-3">Місія</span> та <span class="opacity-25">бачення</span>
+        <h2 class="display-3 mb-5 mx-auto">
+          Місія та <span>бачення</span>
         </h2>
-        <div class="container">
+        <div class="text">
           <p class="mb-5">Метою діяльності Товариства є сприяння розвитку професії «ерготерапія» в Україні, як доказової та науково обґрунтованої професії, представництво професії «ерготерапія» в Україні та за кордоном.</p>
           <p>Також сприяння інтеграції зусиль фахівців реабілітації, спеціальних педагогів та психологів, науковців, викладачів навчальних закладів, працівників соціальних служб, засобів масової інформації, широких верств населення в удосконаленні системи комплексної реабілітації особам з хворобами, вродженими вадами, травмами та їх наслідками, що обмежують можливості повсякденного функціонування та соціальної інтеграції особи, сприяння обміну інформацією та підвищенню якості реабілітаційної допомоги таким особам для найшвидшого повернення їх до повноцінного функціонування та життя в суспільстві.</p>
         </div>
@@ -76,7 +84,7 @@
 
     <!-- Features -->
     <div class="features container px-4 py-5 mb-3" id="features">
-      <h2 class="display-3 mb-5 text-center">Освітні ресурси</h2>
+      <h2 class="display-3 mb-5 mx-auto text-center">Освітні ресурси</h2>
       <!-- List -->
       <div class="content row justify-content-around g-4 row-cols-1 row-cols-lg-3 text-center mb-5">
         <!-- Feature -->
@@ -168,13 +176,13 @@
 
     <!-- Footer -->
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 my-4">
+      <footer class="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-between align-items-center py-3 my-4">
         <a href="/" class="col-md-4 d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
           <img src="./img/logo.svg" width="100px" alt="uset logo">
         </a>
         <p class="col-md-4 mb-0 text-center">Copyright &copy; USET 2023 All Rights Reserved</p>
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-end mt-4 mt-md-2 mb-md-3 mb-md-0 me-md-auto">
-          <img src="./img/DSS_logo_black.png" alt="darkstone studio logo">
+          <img src="./img/DSS_logo.svg" class="me-md-1" width="180px" alt="darkstone studio logo">
         </a>
       </footer>
     </div>
