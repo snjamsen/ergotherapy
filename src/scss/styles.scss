@@ -3,6 +3,9 @@ $primary: #126db5;
 $enable-shadows: true;
 $prefix: "mo-";
 
+// Preloader
+@import "../scss/preloader.scss";
+
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 

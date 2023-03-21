@@ -1,3 +1,6 @@
+//preloader
+import '../js/preloader'
+
 // Import our custom CSS
 import '../scss/styles.scss'
 

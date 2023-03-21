@@ -1,0 +1,27 @@
+// Preloader
+.preloader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    background-color: #fff;
+    transition: opacity 400ms ease-in-out, visibility 0s 500ms;
+    overflow: hidden;
+
+    &.show-preloader {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .spinner-grow {
+        width: 3rem;
+        height: 3rem;
+    }
+}
