@@ -206,7 +206,7 @@ header {
 .login {
     position: relative;
     background-color: $primary;
-    background: linear-gradient(rgba(18, 108, 181, 0.95), rgba(18, 108, 181, 0.95)), url(../img/girl_bg.jpg) no-repeat;
+    background: linear-gradient(rgba(12, 92, 170, 0.93), rgba(12, 92, 170, 0.93)), url(../img/girl_bg.jpg) no-repeat;
     background-position: 50% 20%;
     background-size: 140%;
     border-radius: 13px;
@@ -239,6 +239,10 @@ header {
         }
     }
 
+    p {
+        line-height: 1.1;
+    }
+
     .buttons {
         display: flex;
         justify-content: space-between;
@@ -251,7 +255,6 @@ header {
 
         .btn {
             flex: 1;
-            font-weight: 700;
             font-size: 1.1rem;
             color: #000;
             box-shadow: none;
@@ -289,56 +292,145 @@ header {
     }
 }
 
+// Charity
+.charity {
+    .owl-carousel {
+      .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .charity-logo {
+                display: flex;
+                align-items: center;
+                width: 220px;
+                height: 120px;
+                margin-bottom: 25px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .charity-logo-1 {
+                background-image: url('./img/charity_logo_1.png');
+            }
+
+            .charity-logo-2 {
+                background-image: url('./img/charity_logo_2.png');
+            }
+
+            .charity-logo-3 {
+                background-image: url('./img/charity_logo_3.png');
+            }
+
+            .charity-logo-4 {
+                background-image: url('./img/charity_logo_4.png');
+            }
+
+            p {
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 1.1;
+            }
+        }
+    }
+  }
+  
+
 // Contact
 .contact {
     position: relative;
-    background-color: #126db5;
+    background-color: #0c5caa;
+
     border-radius: 20px;
     color: #fff;
-    padding-top: 150px;
-    margin-top: 250px;
+    
+    margin-top: 100px;
 
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%; 
-        height: 100%;  
-        opacity: 33%; 
-        z-index: -1;
-        background: url(../img/contact-bg.png);
-        background-size: 110%;
+    @media screen and (min-width: 769px) {
+        margin-top: 140px;
     }
 
-    .form {
-        max-width: 650px;
+    @media screen and (min-width: 993px) {
+        margin-top: 170px;
+    }
 
-        input, textarea {
-            font-weight: 500;
-            border-radius: 0.5rem;
-            margin-left: 15px;
 
-            &::placeholder {
-                font-style: italic;
+    @media screen and (min-width: 1201px) {
+        margin-top: 210px;
+    }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: inherit;
+            border-radius: 20px;
+            top: -10%;
+            right: 0;
+            height: 180px;
+            width: 100%;
+            z-index: -1;
+            transform: skewY(357deg);
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -20%;
+            left: 0;
+            right: 0;
+            bottom: 0;  
+            opacity: 17%;
+            z-index: 1;
+            background: url(../img/contact_bg2.png) no-repeat;
+            background-size: cover;
+            background-position: 60% 75%;
+        }
+
+    .content {
+        position: relative;
+        z-index: 1;
+
+        .form {
+            max-width: 650px;
+    
+            input, textarea {
+                font-weight: 500;
+                border-radius: 0.5rem;
+    
+                &::placeholder {
+                    font-style: italic;
+                }
+            }
+    
+            textarea {
+                min-height: 90px;
+                max-height: 250px;
+            }
+    
+            .btn {
+                background-color: #f0c700;
+                color: #000;
+                box-shadow: 0 10px 50px -10px #1b1b1b;
+    
+                &:hover {
+                    background-color: #fbda33;
+                    color: #000000ab;
+                }
             }
         }
-
-        textarea {
-            min-height: 90px;
-        }
-
-        button {
-            font-weight: 700;
-            background-color: #f0c700;
-            color: #000;
-            box-shadow: 0 10px 50px -15px #000;
-
-            &:hover {
-                background-color: #fbda33;
+    
+        .social {
+            a {
+                font-size: 1.25rem;
                 color: #000;
+                margin-right: 10px;
+                transition: .35s;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
