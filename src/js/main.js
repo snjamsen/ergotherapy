@@ -17,7 +17,7 @@ import 'owl.carousel';
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:20,
-    //autoplay: true,
+    autoplay: true,
     responsive:{
         0:{
             items:1
@@ -33,3 +33,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// Features list
+$(document).ready(function() {
+    $(".list-btn").click(function() {
+      // Змінюємо текст кнопки
+      $(this).text(function(i, oldText) {
+        return oldText === "Всі ресурси" ? "Приховати" : "Всі ресурси";
+      });
+  
+      // Перемикаємо клас "d-none" на "feature-ext"
+      $(".feature-ext").toggleClass("d-none");
+    });
+});

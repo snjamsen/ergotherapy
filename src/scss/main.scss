@@ -198,6 +198,10 @@ header {
                     line-height: 1.15;
                 }
             }
+
+            &:feature-ext {
+                transition: opacity .5s ease-in-out;
+            }
         }
     }
 }
