@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>УТЕТ</title>
-    <link rel="shortcut icon" type="image/jpg" href="./img/favicon.png
-    ">
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.png">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -22,7 +21,7 @@
         <span class="visually-hidden">Завантаження...</span>
       </div>
     </div>
-    
+
     <!-- Navbar -->
     <div class="navigation container">
       <header class="hamburger-lines navbar navbar-expand-lg d-flex flex-wrap align-items3.2.1-center justify-content-between py-2 mb-3">
@@ -49,7 +48,7 @@
             <li class="nav-item">
               <a href="#" class="nav-link px-2 link-dark px-3">Контакти</a>
             </li>
-            <button type="button" class="btn btn-primary my-2 my-lg-0 ms-lg-3 px-4 py-2">Увійти</button>
+            <button type="button" class="btn btn-primary my-2 my-lg-0 ms-lg-3 px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">Увійти</button>
           </ul>
         </div>
       </header>
@@ -110,7 +109,6 @@
             <p>First Aid & Management for injured and wounded during military conflict</p>
           </div>
         </div>
-        <!-- Feature -->
         <div class="feature col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2">
             <img src="./img/feature_3.png" alt="Feature icon">
@@ -120,7 +118,6 @@
             <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
           </div>
         </div>
-
         <div class="feature feature-ext d-none col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2">
             <img src="./img/feature_1.png" alt="Feature icon">
@@ -130,7 +127,6 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores atque non</p>
           </div>
         </div>
-        <!-- Feature 5 -->
         <div class="feature feature-ext d-none col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2">
             <img src="./img/feature_2.png" alt="Feature icon">
@@ -150,7 +146,6 @@
             <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
           </div>
         </div>
-
       </div>
 
       <!-- Action button -->
@@ -259,6 +254,67 @@
     </div>
 
     <!-- Pop-up -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-bs-centered="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+            </form>
+            <p>Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true" data-bs-centered="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+            </form>
+            <p>Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>

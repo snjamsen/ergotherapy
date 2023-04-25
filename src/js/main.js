@@ -46,3 +46,8 @@ $(document).ready(function() {
       $(".feature-ext").toggleClass("d-none");
     });
 });
+
+// Modal
+const loginModal = new bootstrap.Modal(document.querySelector('.login-modal'), {
+    keyboard: false
+  })
